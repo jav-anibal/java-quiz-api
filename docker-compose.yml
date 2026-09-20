@@ -20,7 +20,9 @@ services:
       retries: 10
 
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: dockerfile
     container_name: quiz-backend
     restart: always
     depends_on:
