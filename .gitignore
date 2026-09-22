@@ -37,3 +37,11 @@ build/
 .env.local
 *.env.local
 docs/
+
+### Editor history and temporary files ###
+.history/
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
