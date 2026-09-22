@@ -26,10 +26,12 @@ public class Quiz {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(description = "Identificador único del quiz")
     private Integer id;
+    @Schema(description = "Título del quiz")
     @NotBlank(message = "El título es obligatorio")
     private String titulo;
-
+    @Schema(description = "Categoría del quiz")
     @NotNull(message = "La categoría es obligatoria")
     @Enumerated(EnumType.STRING)
     private Categoria categoria;
