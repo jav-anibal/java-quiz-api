@@ -21,13 +21,17 @@ import org.javanibal.quiz.enums.Opcion;
 public class Respuesta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(description = "Identificador único de la respuesta")
     private Integer id;
+    @Schema(description = "Texto de la respuesta")
     @NotBlank(message = "El texto de la respuesta es obligatorio")
     private String texto;
 
+    @Schema(description = "Opción de la respuesta")
     @NotNull(message = "La opción es obligatoria")
     @Enumerated(EnumType.STRING)
     private Opcion opcion;
+    @Schema(description = "Indica si la respuesta es correcta")
     private boolean esCorrecta;
 
     @ManyToOne
