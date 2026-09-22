@@ -1,13 +1,14 @@
 package org.javanibal.quiz.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.javanibal.quiz.enums.Opcion;
 
-
+@Schema(description = "Respuesta asociada a una pregunta")
 @Entity
 @Table(name = "respuesta")
 
