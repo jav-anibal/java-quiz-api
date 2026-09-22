@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.javanibal</groupId>
-    <artifactId>quiz-api</artifactId>
+    <artifactId>quiz</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Java Quiz API</name>
-    <description>REST API for managing quizzes, questions and answers</description>
+    <name>quiz-backend-springboot</name>
+    <description>quiz-backend-springboot</description>
     <url/>
     <licenses>
         <license/>
