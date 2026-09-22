@@ -28,7 +28,9 @@ public class Pregunta {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(description = "Identificador único de la pregunta")
     private Integer id;
+    @Schema(description = "Enunciado de la pregunta")
     @NotBlank(message = "El enunciado es obligatorio")
     private String enunciado;
 
